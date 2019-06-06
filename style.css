@@ -155,7 +155,7 @@ p {
 }
 select {
 	text-align: center;
-	background-color: #2caf1e;
+	background-color: #58a618;
 	border: double #087829;
 	height: 2.5rem;
 	-webkit-appearance: none; 
@@ -163,14 +163,14 @@ select {
 	
 }
 .header {
-	background-color: #2caf1e;
+	background-color: #58a618;
 	text-align: center;
 }
 .search {
-	background-color: #2caf1e;
+	background-color: #58a618;
 	text-align: center;
 }
 .result {
-	background-color: #2caf1e;
+	background-color: #58a618;
 	
 }
