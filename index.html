@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-<title>Aikataluluhaku</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-	<script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			  crossorigin="anonymous"></script>			 
+	<meta charset="UTF-8">
+	​<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Aikataluluhaku</title>
 </head>
+
 <body>
-<div class="container">
-	<div class="row center header">
+<div class="grid-container">
+	<div class="header">
 		<a href="" ><h1>Aikatauluhaku</h1></a>
 	</div>
-	<div class="row center search">
+	<div class="search">
 		<form>
-  			<select id="asemat" autofocus required>
+ <!--  			<select id="asemat">
       		<option> -- valitse asema -- </option>
-				<!-- asemalista-->    
+				<!-- asemalista    
   			</select>
+  			<input type="submit" value="Hae"> -->
+  			
+  			<datalist id="lista">
+      		
+				<!-- asemalista-->    
+  			</datalist>
+  			<input id="asemat" type="text" list="lista" placeholder="--valitse asema--" autofocus required>
+  			<input type="submit" value="Hae">
 		</form>
 	</div>
-	<div class="row result">
+	<div class="result">
 	<!-- junien tiedot aseman mukaan-->
-	<div id="a" class="col-4-sm"></div><!-- aika -->
-	<div id="r" class="col-1-sm center"></div><!-- junan laituri/rata -->
-	<div id="j" class="col-3-sm center"></div><!-- junan tunnus -->
-	<div id="l" class="col-4-sm"></div><!-- junan pääteasema -->
+	<div id="a"></div><!-- aika -->
+	<div id="r"></div><!-- junan laituri/rata -->
+	<div id="j"></div><!-- junan tunnus -->
+	<div id="l"></div><!-- junan pääteasema -->
 	</div>
 </div>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 <script src="script.js"></script> 
 </html>

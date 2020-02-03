@@ -10,7 +10,7 @@ xmlhttp.onreadystatechange = function () {
 		console.log(asemat)
 		asemat.forEach(function(item) {
 			if (item.passengerTraffic == true) {
-				$('#asemat').append('<option value="'+item.stationName+'">'+item.stationName+'</option>')	
+				$('#lista').append('<option value="'+item.stationName+'">'+item.stationName+'</option>')	
 			}
 		})
 		$('#asemat').focus()
