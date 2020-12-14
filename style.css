@@ -6,7 +6,7 @@
 body {
 	color: #fff;
 	margin: auto;
-	max-width: 1200px;
+	max-width: 500px;
 }
 a {
 	color: #fff;
@@ -53,13 +53,17 @@ input:focus {
 	display: grid;
 	background-color: #00b451;
 	text-align: center;
+	padding: 10px;
 	grid-template-areas:
 	'a r j l';
+}
+.ennuste {
+	color: orange;
 }
 #a {
 	grid-area: a;
 	min-width: 120px;
-	text-align: right;
+	text-align: left;
 }
 #r {
 	grid-area: r;
