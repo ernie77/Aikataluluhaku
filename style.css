@@ -4,12 +4,12 @@
 	padding: 0;
 }
 body {
-	color: #fff;
+	color: #ffffff;
 	margin: auto;
 	max-width: 500px;
 }
 a {
-	color: #fff;
+	color: #ffffff;
 }
 .grid-container {
 	display: grid;
@@ -27,15 +27,15 @@ a {
 .search {
 	grid-area: search;
 	background-color: #00b451;
-	min-height: 3.6rem;
-	padding: 1rem;
+	padding-top: 1rem;
+	font-size: 1.5rem;
 	text-align: center;
 }
-
 input {
 	background-color: #00b451;
-	border: 1px solid #fff;
-	color: #fff;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	font-size: 1.5rem;
 	text-align: center;
 }
 ::placeholder {
