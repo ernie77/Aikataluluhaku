@@ -58,7 +58,12 @@ input:focus {
 	'a r j l';
 }
 .ennuste {
-	color: #aa4b14;
+	color: #ffffff;
+	background-color: #ee0e0e;
+	border-radius: 6px;
+	margin-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
 }
 #a {
 	grid-area: a;
