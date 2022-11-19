@@ -1,7 +1,9 @@
 * {
 	box-sizing: border-box;
+	line-height: 1.25;
 	margin: 0;
 	padding: 0;
+	vertical-align: baseline;
 }
 body {
 	background-color: #00b451;
@@ -49,6 +51,9 @@ input:focus {
 	outline: none;
 }
 .result {
+	font-family: monospace;
+	font-size: 1.1rem;
+	font-weight: 500;
 	grid-area: result;
 	display: grid;
 	padding: 1rem;
@@ -60,7 +65,7 @@ input:focus {
 	background-color: #ee0e0e;
 	border-radius: 0.2rem;
 	margin: 0.2rem;
-	padding:  0.3rem 0.3rem 0 0;
+	padding:  0.3rem 0.3rem 0rem 0rem;
 }
 #a {
 	grid-area: a;
