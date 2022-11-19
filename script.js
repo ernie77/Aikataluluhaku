@@ -79,7 +79,7 @@ getStationData().then(([asemat]) => {
 				}
 			})
 			stops.sort(function (a,b) {
-				return a.lahtoaika > b.lahtoaika //järjestää arrayn lähtöajan mukaan
+				return a.lahtoaika - b.lahtoaika //järjestää arrayn lähtöajan mukaan
 			})
 			$('#a').html("Lähtöaika<br>")
 			$('#r').html("Raide<br>")
