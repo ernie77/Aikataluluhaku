@@ -4,9 +4,11 @@
 	padding: 0;
 }
 body {
+	background-color: #00b451;
 	color: #ffffff;
 	margin: auto;
 	max-width: 500px;
+	text-align: center;
 }
 a {
 	color: #ffffff;
@@ -21,23 +23,20 @@ a {
 }
 .header {
 	grid-area: header;
-	background-color: #00b451;
-	text-align: center;
 }
 .search {
 	grid-area: search;
-	background-color: #00b451;
 	padding-top: 1rem;
 	font-size: 1.5rem;
-	text-align: center;
 }
 input {
 	background-color: #00b451;
-	border: 1px solid #ffffff;
-	border-radius: 1rem;
+	border: 1px solid;
+	border-radius: 0.7rem;
 	color: #ffffff;
 	font-size: 1.5rem;
 	text-align: center;
+	padding: 0.2rem;
 }
 ::placeholder {
 	color: #fff;
@@ -52,23 +51,20 @@ input:focus {
 .result {
 	grid-area: result;
 	display: grid;
-	background-color: #00b451;
-	text-align: center;
-	padding: 10px;
+	padding: 1rem;
 	grid-template-areas:
 	'a r j l';
 }
 .ennuste {
 	color: #ffffff;
 	background-color: #ee0e0e;
-	border-radius: 6px;
-	margin-left: 4px;
-	padding-right: 4px;
-	padding-top: 4px;
+	border-radius: 0.2rem;
+	margin: 0.2rem;
+	padding:  0.3rem 0.3rem 0 0;
 }
 #a {
 	grid-area: a;
-	min-width: 120px;
+	min-width: 6rem;
 	text-align: left;
 }
 #r {
@@ -76,10 +72,10 @@ input:focus {
 }
 #j {
 	grid-area: j;
-	min-width: 70px;
+	min-width: 3rem;
 }
 #l {
 	grid-area: l;
-	min-width: 100px;
+	min-width: 8rem;
 	text-align: left;
 }
