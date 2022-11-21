@@ -43,7 +43,7 @@ input {
 }
 ::placeholder {
 	color: #ffffff;
-	opacity: o.7;
+	opacity: 0.7;
 }
 input::-webkit-calendar-picker-indicator {
   display: none;
@@ -58,6 +58,7 @@ input:focus {
 	padding: 1rem;
 }
 #result table {
+	border-collapse: collapse;
 	width: 100%;
 }
 #result table thead tr th {
@@ -68,13 +69,14 @@ input:focus {
 	background-color: #00137fe6;
 }
 tr {
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	line-height: 1.75rem;
 }
 .ennuste {
 	color: #ffffff;
 	background-color: #c80000;
 	border-radius: 0.2rem;
-	margin: 0.2rem;
+	margin: 0.1rem;
 	padding:  0.3rem 0.3rem 0rem 0rem;
 }
 
