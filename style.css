@@ -1,13 +1,13 @@
 * {
 	box-sizing: border-box;
-	line-height: 1.25;
 	margin: 0;
 	padding: 0;
 	vertical-align: baseline;
 }
 body {
-	background-color: #00b451;
+	background-color: #00137ff0;
 	color: #ffffff;
+	line-height: 1.25;
 	margin: auto;
 	max-width: 500px;
 	text-align: center;
@@ -32,7 +32,7 @@ a {
 	font-size: 1.5rem;
 }
 input {
-	background-color: #00b451;
+	background-color: #00137fe6;
 	border: 1px solid;
 	border-radius: 0.7rem;
 	color: #ffffff;
@@ -41,8 +41,8 @@ input {
 	padding: 0.2rem;
 }
 ::placeholder {
-	color: #fff;
-	opacity: 1;
+	color: #ffffff;
+	opacity: o.7;
 }
 input::-webkit-calendar-picker-indicator {
   display: none;
@@ -50,37 +50,30 @@ input::-webkit-calendar-picker-indicator {
 input:focus {
 	outline: none;
 }
-.result {
+#result {
 	font-family: monospace;
 	font-size: 1.1rem;
 	font-weight: 500;
-	grid-area: result;
-	display: grid;
 	padding: 1rem;
-	grid-template-areas:
-	'a r j l';
+}
+#result table {
+	width: 100%;
+}
+#result table thead tr th {
+	background-color: #00137fe6;
+	text-align: left;
+}
+#result table tbody tr:nth-child(even) {
+	background-color: #00137fe6;
+}
+tr {
+	border-bottom: 2px solid #ffffff;
 }
 .ennuste {
 	color: #ffffff;
-	background-color: #ee0e0e;
+	background-color: #c80000;
 	border-radius: 0.2rem;
 	margin: 0.2rem;
 	padding:  0.3rem 0.3rem 0rem 0rem;
 }
-#a {
-	grid-area: a;
-	min-width: 6rem;
-	text-align: left;
-}
-#r {
-	grid-area: r;
-}
-#j {
-	grid-area: j;
-	min-width: 3rem;
-}
-#l {
-	grid-area: l;
-	min-width: 8rem;
-	text-align: left;
-}
+

@@ -81,21 +81,31 @@ getStationData().then(([asemat]) => {
 			stops.sort(function (a,b) {
 				return a.lahtoaika - b.lahtoaika //järjestää arrayn lähtöajan mukaan
 			})
-			$('#a').html("Lähtöaika<br>")
-			$('#r').html("Raide<br>")
-			$('#j').html("Juna<br>")
-			$('#l').html("Määränpää<br>")
+			var content = "<table><thead><tr><th>Juna</th><th>Aika</th><th>Raide</th><th>Määräasema</th></tr></thead><tbody>"
 			stops.forEach(function(item) {
-				$('#a').append("<br>"+(item.lahtoaika.getHours()<10?'0':'')+item.lahtoaika.getHours()+":"+(item.lahtoaika.getMinutes()<10?'0':'')+item.lahtoaika.getMinutes())
+				content += "<tr><td>"+item.juna+"</td>"
+				content += "<td>"
+					+(item.lahtoaika.getHours()<10?'0':'')
+					+item.lahtoaika.getHours()+":"
+					+(item.lahtoaika.getMinutes()<10?'0':'')
+					+item.lahtoaika.getMinutes()
+				
 				if ($.type(item.ennuste) === "string") {
-					$('#a').append("<span class='ennuste'> Peruttu</span>")
+					content += "<span class='ennuste'> Peruttu</span>"
 				} else if (item.ennuste != null) {
-					$('#a').append("<span class='ennuste'> ~"+(item.ennuste.getHours()<10?'0':'')+item.ennuste.getHours()+":"+(item.ennuste.getMinutes()<10?'0':'')+item.ennuste.getMinutes()+"</span>") 
+					content += "<span class='ennuste'> ~"
+						+(item.ennuste.getHours()<10?'0':'')
+						+item.ennuste.getHours()
+						+":"+(item.ennuste.getMinutes()<10?'0':'')
+						+item.ennuste.getMinutes()+"</span>"
 				}
-				$('#j').append("<br>"+item.juna)
-				$('#r').append("<br>"+item.raide)
-				$('#l').append("<br>"+item.loppuasema)
-				})	
+				content += "</td>"
+				
+				content += "<td>"+item.raide+"</td>"
+				content += "<td>"+item.loppuasema+"</td></tr>"
+				})
+			content += "</tbody></table>"
+			$('#result').append(content)
 			})
 		})
 	})
