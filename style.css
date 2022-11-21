@@ -10,7 +10,6 @@ body {
 	line-height: 1.25;
 	margin: auto;
 	max-width: 500px;
-	text-align: center;
 }
 a {
 	color: #ffffff;
@@ -25,11 +24,13 @@ a {
 }
 .header {
 	grid-area: header;
+	text-align: center;
 }
 .search {
 	grid-area: search;
 	padding-top: 1rem;
 	font-size: 1.5rem;
+	text-align: center;
 }
 input {
 	background-color: #00137fe6;
