@@ -45,8 +45,8 @@ input {
 	color: #ffffff;
 	opacity: 0.7;
 }
-input::-webkit-calendar-picker-indicator {
-  display: none;
+input[type="text"]::-webkit-calendar-picker-indicator {
+	display: none !important;
 }
 input:focus {
 	outline: none;
