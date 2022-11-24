@@ -17,6 +17,10 @@ function getTrainData() {
 	return Promise.all([getTrains()])
 }
 
+$(document).on("keydown", "form", function(event) { 
+    return event.key != "Enter";
+});
+
 getStationData().then(([asemat]) => {
 	asemat.forEach(function(item) {
 		if (item.passengerTraffic == true) {
